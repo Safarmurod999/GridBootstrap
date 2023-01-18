@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grid</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link href="assets/lib/unicons/css/unicons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light navbar-top bg-light fs--1 fixed-top d-flex flex-row py-0 pl-0"
+      >
+        <div class="container-fluid">
+          <div class="navbar-brand navbar-brand-custom">
+            <div class="logo-icon">
+              <span class="uil uil-apps text-light fs--1"></span>
+            </div>
+            <span class="text-light m-lg-2 fs-1"
+              ><strong>Grid</strong>Works</span
+            >
+          </div>
+          <div class="collapse navbar-collapse align-items-center justify-content-between">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <img src="images/user-icon.png" alt="user-icon" />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="#"
+                  ><span class="uil uil-twitter fs-2"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="#"
+                  ><span class="uil uil-facebook-f fs-2"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="#"
+                  ><span class="uil uil-instagram-alt fs-2"> </span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="#"
+                  ><span class="uil uil-google-drive fs-2"></span
+                ></a>
+              </li>
+            </ul>
+            <form action="#" class="form-inline">
+              <div class="input-group-icon">
+                <span class="uil uil-envelope fs-2"></span>
+                <input
+                  class="form-control form-control-lg input-box"
+                  type="email"
+                  placeholder="Email Address"
+                  aria-label="Email"
+                />
+              </div>
+              <button
+                class="btn btn-light btn-lg border-primary text-primary"
+                type="submit"
+              >
+                Stay Updated
+              </button>
+            </form>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-vertical-collapse"
+          aria-controls="navbar-vertical-collapse"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+          onclick="navToggle()"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+       <div id="top-nav">
+        <div id="responsive-nav"
+        class="collapse navbar-collapse align-items-center d-flex bg-white py-2 px-3 flex-wrap justify-content-between"
+      >
+        <ul class="navbar-nav align-items-center flex-row">
+          <li class="nav-item">
+            <img src="images/user-icon.png" alt="user-icon" />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#"
+              ><span class="uil uil-twitter fs-2"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#"
+              ><span class="uil uil-facebook-f fs-2"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#"
+              ><span class="uil uil-instagram-alt fs-2"> </span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#"
+              ><span class="uil uil-google-drive fs-2"></span
+            ></a>
+          </li>
+        </ul>
+        <form action="#" class="form-inline flex-wrap">
+          <div class="input-group-icon">
+            <span class="uil uil-envelope fs-2"></span>
+            <input
+              class="form-control form-control-lg input-box"
+              type="email"
+              placeholder="Email Address"
+              aria-label="Email"
+            />
+          </div>
+          <button
+            class="btn btn-light btn-lg border-primary text-primary"
+            type="submit"
+          >
+            Stay Updated
+          </button>
+        </form>
+      </div>
+      <div id="responsive-nav" class="navbar-collapse bg-white">
+        <ul class="navbar-nav navbar-nav-v flex-row flex-wrap bg-white justify-content-between px-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              ><span class="icons fs-3 uil uil-home"></span
+              ><span class="fs--1"> Home</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-services" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-bolt"></span
+              ><span class="fs--1"> Services</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-contacts" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-phone"></span
+              ><span class="fs--1"> Contacts</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-components" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-cog"></span
+              ><span class="fs--1"> Components</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-utilities" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-wrench"></span
+              ><span class="fs--1"> Utilities</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#modal-documentation"
+              data-toggle="modal"
+              ><span class="icons fs-3 uil uil-clipboard-notes"></span
+              ><span class="fs--1"> Documentation</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-fire"></span
+              ><span class="fs--1"> Features</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-shopping-bag"></span
+              ><span class="fs--1"> Cart</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-pen"></span
+              ><span class="fs--1"> Blog</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-flower"></span
+              ><span class="fs--1"> About</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-swatchbook"></span
+              ><span class="fs--1"> Portfolio</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-usd-circle"></span
+              ><span class="fs--1"> Pricing</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-unlock"></span
+              ><span class="fs--1"> Terms</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modal-demo" data-toggle="modal"
+              ><span class="icons fs-3 uil uil-comment-dots"></span
+              ><span class="fs--1"> Support</span></a
+            >
+          </li>
+        </ul>
+        <a
+          class="footer-text order-2 order-md-0"
+          href="https://themewagon.com/"
+          >Made with <span class="mx-1 uil uil-heart-alt fs-1 text-info"></span>by
+          ThemeWagon
+        </a>
+      </div>
+       </div>
+        <!-- <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-vertical-collapse"
+          aria-controls="navbar-vertical-collapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      </nav>
+    </header>
+
+    <main>
+      <aside class="d-lg-block">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav navbar-nav-vertical flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><span class="icons fs-3 uil uil-home"></span
+                ><span class="fs--1"> Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-services" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-bolt"></span
+                ><span class="fs--1"> Services</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-contacts" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-phone"></span
+                ><span class="fs--1"> Contacts</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-components" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-cog"></span
+                ><span class="fs--1"> Components</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-utilities" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-wrench"></span
+                ><span class="fs--1"> Utilities</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#modal-documentation"
+                data-toggle="modal"
+                ><span class="icons fs-3 uil uil-clipboard-notes"></span
+                ><span class="fs--1"> Documentation</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-fire"></span
+                ><span class="fs--1"> Features</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-shopping-bag"></span
+                ><span class="fs--1"> Cart</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-pen"></span
+                ><span class="fs--1"> Blog</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-flower"></span
+                ><span class="fs--1"> About</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-swatchbook"></span
+                ><span class="fs--1"> Portfolio</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-usd-circle"></span
+                ><span class="fs--1"> Pricing</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-unlock"></span
+                ><span class="fs--1"> Terms</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modal-demo" data-toggle="modal"
+                ><span class="icons fs-3 uil uil-comment-dots"></span
+                ><span class="fs--1"> Support</span></a
+              >
+            </li>
+          </ul>
+          <a
+            class="footer-text order-2 order-md-0"
+            href="https://themewagon.com/"
+            >Made with <span class="uil uil-heart-alt fs-1 text-info"></span>by
+            ThemeWagon
+          </a>
+        </div>
+      </aside>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row mx-2">
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-1.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Revolutionise Your Workspace With Us At Gridworks
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div class="card-bottom">
+                      <span
+                        class="fs-3 text-300 align-middle uil uil-lightbulb-alt"
+                      ></span>
+                      <span class="text-white fs--1 mb-0 d-inline-block"
+                        >Reffering Workspace</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 badge-success"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Entrepreneurship</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-2.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Coworking Spaces Built For Your Start Startups
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div class="card-bottom">
+                      <span
+                        class="fs-3 text-300 align-middle uil uil-brain"
+                      ></span>
+                      <span class="text-white fs--1 mb-0 d-inline-block"
+                        >Define Your Vision</span
+                      >
+                    </div>
+                    <a
+                      style="color: #000; background-color: #f9d776"
+                      class="badge badge-pill stretched-link ml-2 badge-success"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Startups Weekly</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-3.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Everything Your Team Could Need, We Have Got It.
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div class="card-bottom">
+                      <span
+                        class="fs-3 text-300 align-middle uil uil-question-circle"
+                      ></span>
+                      <span class="text-white fs--1 mb-0 d-inline-block"
+                        >Solve Specific Problem</span
+                      >
+                    </div>
+                    <a
+                      style="color: #000; background-color: #f9fbfd"
+                      class="badge badge-pill stretched-link ml-2 badge-success"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Week In Review</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-8 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-4.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    How to grow and scale your business without hiring more
+                    people
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-map-pin-alt"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Define your Space</span
+                      >
+                    </div>
+                    <a
+                      style="background-color: #ff0000"
+                      class="badge badge-pill stretched-link ml-2 badge-danger"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Creativity</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-4 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-5.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    How training my brain to focus helped me to build two
+                    profitable businesses
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-list-ui-alt"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >List Your Business Goals</span
+                      >
+                    </div>
+                    <a
+                      style="background-color: #7b69ef"
+                      class="badge badge-pill stretched-link ml-2 badge-info"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Motivation</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-6 col-xxl-4 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-6.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    How to escape competition (and build a business on your own
+                    terms)
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-users-alt"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Pick Your Team</span
+                      >
+                    </div>
+                    <a
+                      style="background-color: #523bea"
+                      class="badge badge-pill stretched-link ml-2 badge-info"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Personal Development</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-6 col-xxl-4 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-7.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Sell Something Bigger Than Your Otherwise Boring Business
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-book-alt"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Coworking Business Model</span
+                      >
+                    </div>
+                    <a
+                      style="background-color: #1645d1"
+                      class="badge badge-pill stretched-link ml-2 badge-primary"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Life Lessons</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-8 col-xxl-6 mt-3">
+              <div class="card card-blog">
+                <img class="card-img img-fluid" src="images/pic-8.png" alt="" />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    The unofficial (slightly sarcastic) thesaurus for business
+                    buzzwords.✌️
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-keyhole-circle"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Key Resources</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 badge-success"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Business</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-6 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-13.png"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Bootstrapping Guide: How to Start a Business with No Money
+                    👌
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-focus-target"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Target Audience</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 bg-danger"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Innovation</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-6 col-xxl-4 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-14.png"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    How to make better decisions in life and in business: a mini
+                    guide
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-keyhole-square"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Key Activities</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 badge-success"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Hard Work</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-6 col-xxl-4 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-15.jpg"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Button colors won’t save your business
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-usd-square"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Revenue Streams</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 bg-primary"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Investing</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-8 col-xxl-4 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-16.jpg"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Slow growth is good for business 🔥
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-user-plus"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Added Value</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 badge-success"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Blogging</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-17.jpg"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Why Businesses Should Start Focusing on Google’s Flutter and
+                    Fuchsia
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-megaphone"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Advertising</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 bg-info"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Freelancing</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-18.jpg"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    Mapping a Business Model in 5 Steps
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-users-alt"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Customer Segments</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 badge-success"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Development</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-19.png"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    You Are The Problem With Your Business
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-user-plus"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Partners</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 bg-warning"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Evolution</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 col-sm-6 col-lg-4 col-xxl-3 mt-3">
+              <div class="card card-blog">
+                <img
+                  class="card-img img-fluid"
+                  src="images/pic-20.png"
+                  alt=""
+                />
+                <div
+                  class="card-img-overlay overlay-gradient d-flex flex-column justify-content-between"
+                >
+                  <h5 class="card-title text-white">
+                    How to make Subscription Model Work for Your Business
+                  </h5>
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span
+                        class="uil fs-3 text-300 align-middle uil-megaphone"
+                      ></span
+                      ><span class="text-white fs--1 mb-0 d-inline-block"
+                        >Marketing Strategies</span
+                      >
+                    </div>
+                    <a
+                      class="badge badge-pill stretched-link ml-2 bg-light"
+                      data-toggle="modal"
+                      href="#modal-card"
+                      >Confidence</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
